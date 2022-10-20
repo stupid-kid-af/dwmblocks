@@ -1,0 +1,19 @@
+commit 53f88b1e611a9df6f65eb5f449cdd13ba2e54bdd
+Author: Ashutosh Tripathi <pushpatripathi1111@gmail.com>
+Date:   Fri Oct 21 00:53:42 2022 +0530
+
+    added realtime speed
+
+diff --git a/blocks.def.h b/blocks.def.h
+index 9c22d68..8df1257 100644
+--- a/blocks.def.h
++++ b/blocks.def.h
+@@ -2,6 +2,8 @@
+ static const Block blocks[] = {
+ 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
+ 	{"Mem:", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
++	
++	{"Speed:", "speed", 							0, 		0},
+ 
+ 	{"", "date '+%b %d (%a) %I:%M%p'",					5,		0},
+ };
