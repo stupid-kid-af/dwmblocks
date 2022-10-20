@@ -6,6 +6,12 @@ After that you can put dwmblocks in your xinitrc or other startup script to have
 ```bash
   patch -p1 < speed-realtime-patch-21-oct-2022.diff
 ```
+```bash
+  make
+```
+```bash
+  sudo make clean install
+```
 # modifying blocks
 The statusbar is made from text output from commandline programs.
 Blocks are added and removed by editing the blocks.h header file.
